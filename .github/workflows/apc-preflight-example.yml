@@ -1,0 +1,25 @@
+# Example only. Configure repository rulesets/required reviews separately.
+name: APC consequential-action preflight
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  apc-preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Evaluate proposed agent action
+        uses: ./
+        with:
+          request-path: examples/apc-action-request.json
+          policy-path: policies/policy.json
+          report-path: apc-decision-report.json
+      - name: Upload decision report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: apc-preflight-report
+          path: apc-decision-report.json
+          if-no-files-found: ignore

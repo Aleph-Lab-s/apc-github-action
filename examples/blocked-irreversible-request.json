@@ -1,0 +1,9 @@
+{
+  "action_id": "agent-plan-002",
+  "operation": "cloud.resource.delete",
+  "target": "production-cluster",
+  "risk_class": "irreversible",
+  "reversible": false,
+  "environment": "production",
+  "agent_id": "example-agent"
+}

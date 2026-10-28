@@ -1,0 +1,74 @@
+{
+  "product": "APC GitHub Free RC",
+  "version": "1.0.0",
+  "package_class": "release-candidate",
+  "status": "preflight-only; high-consequence actions always denied; not marketplace reviewed",
+  "generated_utc": "2026-10-28",
+  "files": [
+    {
+      "path": ".github/workflows/apc-preflight-example.yml",
+      "bytes": 810,
+      "sha256": "d6292b1d68aab668650a32ee8d7ffd32c139190bf263a1f1f99e6187d07b6e32"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 65,
+      "sha256": "9fc27df95631a40771e23721fac3e00a32d367b9893352f3d3c3a929244eaf73"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 738,
+      "sha256": "024ddf1a691cf08f48838a2b445b96a91ef9e74fd9961c92a81dea452cbf0cb6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2200,
+      "sha256": "78f86c2fc0d1e57d1affbe6c739b2585252132ab1b4f53d855dd893b8e767dfa"
+    },
+    {
+      "path": "RELEASE-STATUS.md",
+      "bytes": 835,
+      "sha256": "05b4cc54189c5db27165b2c79d72d95a056f3a4910a9eefaa6b3bf1e6f3b7b01"
+    },
+    {
+      "path": "action/index.js",
+      "bytes": 5397,
+      "sha256": "28752d0e2e7efcdb7b9fcc1bfd1c0424b60e375c8c0d7d1f971435a91dd356d1"
+    },
+    {
+      "path": "action.yml",
+      "bytes": 861,
+      "sha256": "3222229a18cadd74e8e960de5ae41afa977d160bb849633a7ae0948b9f3524d8"
+    },
+    {
+      "path": "docs/SECURITY-BOUNDARY.md",
+      "bytes": 1252,
+      "sha256": "24186b64e85c57c6c684c9669c54da9d03077a948a6bd779b66814df2a08f231"
+    },
+    {
+      "path": "examples/apc-action-request.json",
+      "bytes": 214,
+      "sha256": "3a555c3e8f9459dc5237e5d0577e3a82f7ebe71d3fb9ea646e0d574e49d80cbe"
+    },
+    {
+      "path": "examples/blocked-irreversible-request.json",
+      "bytes": 227,
+      "sha256": "2c73031f4428bbb373054f84f00a1b47884ae91dec87d8a74aa1162518bd272a"
+    },
+    {
+      "path": "package.json",
+      "bytes": 184,
+      "sha256": "a62bff2aad27411fe60ad5f55f968e94420cf984ca3255e01f078454a13233de"
+    },
+    {
+      "path": "policies/policy.json",
+      "bytes": 423,
+      "sha256": "dd14c8ee67c8c4316223f710c6e7685c6b86c42f82fc11f7d97220792c6bcc07"
+    },
+    {
+      "path": "tests/evaluate.test.js",
+      "bytes": 1931,
+      "sha256": "8b63344944dcd019adb89bdd900383d7372f9fca0923b0723396d448b309b9c6"
+    }
+  ]
+}

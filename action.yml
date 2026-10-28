@@ -1,0 +1,27 @@
+name: APC Consequential Action Gate (Free RC)
+description: Fail-closed preflight gate for AI-agent action requests in GitHub Actions. Consequential/irreversible effects are blocked in this free evaluation release.
+author: Aleph Labs
+branding:
+  icon: shield
+  color: blue
+inputs:
+  request-path:
+    description: Workspace-relative JSON file describing the proposed action
+    required: true
+    default: apc-action-request.json
+  policy-path:
+    description: Workspace-relative APC policy JSON
+    required: true
+    default: .apc/policy.json
+  report-path:
+    description: Workspace-relative sanitized JSON decision report path
+    required: true
+    default: apc-decision-report.json
+outputs:
+  decision:
+    description: APC preflight decision (ALLOW or DENY)
+  reason:
+    description: Short decision reason
+runs:
+  using: node20
+  main: action/index.js

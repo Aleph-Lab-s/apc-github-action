@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "default_decision": "deny",
+  "rules": [
+    {
+      "id": "allow-read-only",
+      "match": {
+        "risk_class": "read_only",
+        "reversible": true
+      },
+      "decision": "allow"
+    },
+    {
+      "id": "allow-reversible-nonprod",
+      "match": {
+        "risk_class": "low",
+        "reversible": true,
+        "environment": "development"
+      },
+      "decision": "allow"
+    }
+  ]
+}

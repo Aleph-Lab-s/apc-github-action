@@ -1,0 +1,9 @@
+{
+  "action_id": "agent-plan-001",
+  "operation": "terraform.plan",
+  "target": "sandbox-cluster",
+  "risk_class": "read_only",
+  "reversible": true,
+  "environment": "development",
+  "agent_id": "example-agent"
+}
